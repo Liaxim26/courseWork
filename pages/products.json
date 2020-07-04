@@ -1,0 +1,47 @@
+{
+	"1" : {
+		"name" : "PONS Basic Kit",
+		"price" : 990,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/e12/170_170_0/e12ef5442146ade338ba924a40bc083f.png" 
+	},
+	"2" : {
+		"name" : "Logic Compact",
+		"price" : 1350,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/ebb/170_170_0/ebb9bd618e9c1101fb7cf18782dcedb2.png" 
+	},
+	"3" : {
+		"name" : "JUUL Promo Kit Mint",
+		"price" : 1499,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/f2c/170_170_0/f2c8aec890735397459b303bb729e8bc.jpg" 
+	},
+	"4" : {
+		"name" : "PONS Basic Kit",
+		"price" : 990,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/e12/170_170_0/e12ef5442146ade338ba924a40bc083f.png" 
+	},
+	"5" : {
+		"name" : "Logic Compact",
+		"price" : 1350,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/ebb/170_170_0/ebb9bd618e9c1101fb7cf18782dcedb2.png" 
+	},
+	"6" : {
+		"name" : "JUUL Promo Kit Mint",
+		"price" : 1499,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/f2c/170_170_0/f2c8aec890735397459b303bb729e8bc.jpg" 
+	},
+	"7" : {
+		"name" : "PONS Basic Kit",
+		"price" : 990,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/e12/170_170_0/e12ef5442146ade338ba924a40bc083f.png" 
+	},
+	"8" : {
+		"name" : "Logic Compact",
+		"price" : 1350,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/ebb/170_170_0/ebb9bd618e9c1101fb7cf18782dcedb2.png" 
+	},
+	"9" : {
+		"name" : "JUUL Promo Kit Mint",
+		"price" : 1499,
+		"img" : "https://babylonvape.ru/upload/resize_cache/iblock/f2c/170_170_0/f2c8aec890735397459b303bb729e8bc.jpg" 
+	}		
+}	

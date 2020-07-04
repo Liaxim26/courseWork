@@ -1,0 +1,27 @@
+.registration{
+	height: 150px;
+	background-color: #f9f9f9;
+	padding-top: 25px;
+}
+.reg_menu{
+	text-align: center;
+	font-size: 13px;
+	color : #c5b5b5;
+	padding-top: 10px;
+}
+
+.reg_menu>a{
+	color : #c5b5b5;
+}
+.form-reg{
+	
+}
+.form-signin{
+	max-width: 400px;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #f9f9f9;
+}
+.info-login{
+	text-align: center;
+}

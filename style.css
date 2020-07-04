@@ -1,0 +1,134 @@
+.top-header{
+	height: 49px;
+	background-color: #202020;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.mid-header{
+	height: 100px;
+	box-shadow: 0 8px 3px -9px rgba(0,0,0,0.5);
+	padding-bottom: 5px;
+}
+.search{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+.mid-header > div {
+    float: left; 
+    margin-right: 3%;
+    padding-top: 5px;
+}
+.info{
+	font-size: 11px;
+	
+}
+.address{
+	box-shadow: 0 8px 11px -9px rgba(0,0,0,0.2);
+	padding-bottom: 5px;
+}
+.basket{
+	box-shadow: 0 8px 11px -9px rgba(0,0,0,0.2);
+	padding-bottom: 5px;	
+}
+.number{
+
+}
+section{
+	padding-left: 33.5px;
+	padding-right: 33.5px;
+}
+.menu > nav >a{	
+	float: left;
+    width: 14.27%;
+    padding: 10px;
+    text-align: center;
+    margin: 7.5px 0 7.5px 0;
+
+
+}
+.menu > nav >a:last-child {
+    margin-right: 0;
+}
+.menu{
+	height: 59px;
+}
+.populary{
+	height: 620px;
+}
+.popular{
+	margin-top: 30px;
+	font-size: 24px;
+	
+}
+.fool{
+	margin-left: -15px;
+
+}
+.popularCategories>div{
+	float: left;
+    width: 23.5%;
+    margin-right: 2%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.popularCategories>div:last-child {
+    margin-right: 0;
+}
+
+.bestseller{
+	height: 100px;
+}
+footer{
+	background-color: #2e2e2f;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.fot{
+	box-shadow: 0 8px 3px -9px rgba(255,255,255,0.5);
+}
+
+.registration{
+	height: 150px;
+	background-color: #f9f9f9;
+	padding-top: 25px;
+}
+.reg_menu{
+	text-align: center;
+	font-size: 13px;
+	color : #c5b5b5;
+	padding-top: 10px;
+}
+
+.reg_menu>a{
+	color : #c5b5b5;
+}
+.form-reg{
+	
+}
+.form-signin{
+	max-width: 400px;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #f9f9f9;
+}
+.info-login{
+	text-align: center;
+}
+.about{
+	margin-top: 25px;
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+}
+
+.main-cart{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.one-cart{
+	width: 900px;
+	
+}
