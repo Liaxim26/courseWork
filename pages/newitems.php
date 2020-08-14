@@ -18,8 +18,8 @@ require ('../users/connection.php');  ?>
 <div class="app">
     <div class="list products-out">
 <?php 
-	$pod = mysqli_query($connection,"SELECT * FROM product WHERE idCategory = 3");
-	while ($product = $pod->fetch_assoc()) {
+	$new = mysqli_query($connection,"SELECT * FROM product WHERE idCategory = 2");
+	while ($product = $new->fetch_assoc()) {
 		echo '
 		<div class="card">
       		<div class="card-img">  

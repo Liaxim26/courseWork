@@ -22,7 +22,12 @@ session_start();
 			<a class="p-2 text-white font-weight-light" href="">Оплата</a>
 			<a class="p-2 text-white font-weight-light" href="">Контакты</a>
 		</nav>
-		<a id="login" class="mt-1 btn btn-outline-light " href="../users/login.php">Войти</a>
+		<?php 
+		if (isset($_SESSION['username'])) {
+			echo '<a id="login" class="mt-1 btn btn-outline-light " href="../users/logout.php">Выход</a>';
+		} else {
+			echo '<a id="login" class="mt-1 btn btn-outline-light " href="../users/login.php">Войти</a>';
+		} ?>		
 	</div> 
 </div>	
 	<div class="mid-header d-flex flex-column flex-md-row align-items-center">
@@ -50,7 +55,7 @@ session_start();
 	<div class="menu">
 		<nav>
 			<a class="text-dark font-weight-bold" href="">Скидки</a>
-			<a class="text-dark font-weight-bold" href="">Новинки</a>
+			<a class="text-dark font-weight-bold" href="../pages/newitems.php">Новинки</a>
 			<a class="text-dark font-weight-bold" href="../pages/podsystem.php">POD-системы</a>
 			<a class="text-dark font-weight-bold" href="#">Жидкости</a>
 			<a class="text-dark font-weight-bold" href="">Вейпы</a>
@@ -59,18 +64,3 @@ session_start();
 		</nav>
 	</div>
 </header>
-
-
-<?php 
-if (isset($_SESSION['username'])) { ?>
-	<script>
-	document.getElementById("login").innerHTML = "Выход"
-	document.getElementById("login").href = "../users/logout.php";
-	
-	</script>
-<?php } else { ?>
-	<script>
-	document.getElementById("login").innerHTML = "Войти"
-	document.getElementById("login").href = "../users/login.php";
-	</script>
-<?php } ?>
