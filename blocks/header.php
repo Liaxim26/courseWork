@@ -57,7 +57,7 @@ session_start();
 			<a class="text-dark font-weight-bold" href="">Скидки</a>
 			<a class="text-dark font-weight-bold" href="../pages/newitems.php">Новинки</a>
 			<a class="text-dark font-weight-bold" href="../pages/podsystem.php">POD-системы</a>
-			<a class="text-dark font-weight-bold" href="#">Жидкости</a>
+			<a class="text-dark font-weight-bold" href="../pages/liquid.php">Жидкости</a>
 			<a class="text-dark font-weight-bold" href="">Вейпы</a>
 			<a class="text-dark font-weight-bold" href="">Атомайзеры</a>
 			<a class="text-dark font-weight-bold" href="">Аксессуары</a>
