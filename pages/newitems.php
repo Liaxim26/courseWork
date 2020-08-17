@@ -9,10 +9,10 @@ require ('../users/connection.php');  ?>
 <section>
 
 	<div class="registration">
-		<h2 align="center">POD-системы</h2>
+		<h2 align="center">Новинки</h2>
 		<div class="reg_menu">
 			<a href="../index.php">Главная</a> -
-			<a href="podsystem.php">POD-системы</a> 
+			<a href="newitems.php">Новинка</a> 
 		</div>
 	</div>
 <div class="app">

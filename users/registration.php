@@ -15,7 +15,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
 	$result = mysqli_query($connection, $query);
 
 	if ($result) {
-		$smsg = "Регистация прошла успешно";
+		$smsg = "Регистрация прошла успешно";
 	} else {
 		$fsmsg = "Ошибка";
 	}
