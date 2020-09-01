@@ -11,7 +11,7 @@
 			<div class="fool"><a href="pages/podsystem.php">
 					<div><img src="img/popularCategories1.jpg" alt=""></div>
 				</a></div>
-			<div><a href="">
+			<div><a href="pages/liquid.php">
 					<div><img src="img/popularCategories2.jpg" alt=""></div>
 				</a></div>
 			<div><a href="">

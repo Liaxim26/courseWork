@@ -1,4 +1,4 @@
-var cart = {}
+/*var cart = {}
 
 function init() {
   $.getJSON("products.json", productsOut);
@@ -25,9 +25,11 @@ function productsOut(pod){
   $('.btn-cart').on('click', addToCart)
 }
 
+
+
 function addToCart(){
   var id = $(this).attr('data-id') 
-  if (cart[id]==undefined) {
+  /*if (cart[id]==undefined) {
     cart[id] = 1
   }  else {
     cart[id] ++
@@ -51,3 +53,4 @@ $(document).ready(function(){
   //init()
   //loadCart()
 })
+*/

@@ -1,4 +1,4 @@
-var carts = {}
+/*var carts = {}
 function loadCart() {
     if (localStorage.getItem('cart')) {
         carts = JSON.parse(localStorage.getItem('cart'))        
@@ -8,7 +8,7 @@ function loadCart() {
     }
 }
 
-function showCart() {
+/*function showCart() {
     $.getJSON('products.json', function (data) {
         var products = data
         var out = ''
@@ -34,5 +34,5 @@ function showCart() {
 
 
 
-
-loadCart()
+*/
+//loadCart()

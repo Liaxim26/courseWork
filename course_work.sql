@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Авг 17 2020 г., 16:36
+-- Время создания: Сен 01 2020 г., 00:59
 -- Версия сервера: 5.7.25
 -- Версия PHP: 7.1.32
 
@@ -21,6 +21,31 @@ SET time_zone = "+00:00";
 --
 -- База данных: `course_work`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `cart_item`
+--
+
+CREATE TABLE `cart_item` (
+  `newid` int(10) UNSIGNED NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `count` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `cart_item`
+--
+
+INSERT INTO `cart_item` (`newid`, `user_id`, `product_id`, `count`) VALUES
+(4, 1, 23, 1),
+(62, 3, 24, 1),
+(64, 3, 3, 2),
+(65, 3, 2, 2),
+(66, 3, 1, 1),
+(67, 3, 4, 2);
 
 -- --------------------------------------------------------
 
@@ -80,7 +105,6 @@ INSERT INTO `product` (`id`, `name`, `price`, `img`, `idCategory`) VALUES
 (13, 'Smoant Battlestar Baby', 1890, 'https://babylonvape.ru/upload/resize_cache/iblock/78f/170_170_0/78f14a01bdef00bb8010420df60e227b.jpg', 2),
 (14, 'Жидкость Cuttwood Bird Brains', 1050, 'https://babylonvape.ru/upload/resize_cache/iblock/964/170_170_0/964c9670cc03a1e39d957a7283539eb2.jpg', 2),
 (15, 'Жидкость The Finest Salt', 990, 'https://babylonvape.ru/upload/resize_cache/iblock/5bd/170_170_0/5bd95bd84797852e5753490c8a9a0d66.jpg', 2),
-(20, 'Жидкость Turbo K.O. 60 мл', 690, 'https://babylonvape.ru/upload/resize_cache/iblock/139/170_170_0/139e674c9718cbafa1ebe9fe10ded63b.png', 4),
 (21, 'Drip Fried: Жидкость Banana', 1090, 'https://babylonvape.ru/upload/resize_cache/iblock/d05/170_170_0/d0531c3500d0dc935e2a7d87a996fe7f.jpg', 4),
 (22, 'BRWD: Жидкость Rio', 1350, 'https://babylonvape.ru/upload/resize_cache/iblock/bdc/170_170_0/bdcd101a466df553172b24a78eda2f2a.jpg', 4),
 (23, 'Cola Man: Жидкость Lime', 1050, 'https://babylonvape.ru/upload/resize_cache/iblock/0d2/170_170_0/0d2a978d7afce9e8f202a1b8abc31b08.jpg', 4),
@@ -115,6 +139,14 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
 --
 
 --
+-- Индексы таблицы `cart_item`
+--
+ALTER TABLE `cart_item`
+  ADD PRIMARY KEY (`newid`),
+  ADD KEY `product_id` (`product_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
 -- Индексы таблицы `category`
 --
 ALTER TABLE `category`
@@ -139,6 +171,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT для таблицы `cart_item`
+--
+ALTER TABLE `cart_item`
+  MODIFY `newid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+
+--
 -- AUTO_INCREMENT для таблицы `category`
 --
 ALTER TABLE `category`
@@ -159,6 +197,13 @@ ALTER TABLE `users`
 --
 -- Ограничения внешнего ключа сохраненных таблиц
 --
+
+--
+-- Ограничения внешнего ключа таблицы `cart_item`
+--
+ALTER TABLE `cart_item`
+  ADD CONSTRAINT `cart_item_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`),
+  ADD CONSTRAINT `cart_item_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 --
 -- Ограничения внешнего ключа таблицы `product`

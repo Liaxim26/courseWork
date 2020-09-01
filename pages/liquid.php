@@ -29,10 +29,11 @@ require ('../users/connection.php');  ?>
       	</div>
         	<h5>'.$product['name'].'</h5>
         	<p>'.$product['price'].' руб./шт</p>
-        	<button class="btn-cart btn btn-info btn-block" type="submit" data-id="'.$product['id'].'">Купить</button>
+        	<button class="btn-cart btn btn-info btn-block" onclick="addToCart('.$product['id'].')" type="submit" data-id="'.$product['id'].'">Купить</button>
     	</div>
 		';
 	}
+
 /*	<div class="app">
     <div class="list products-out"></div>
 	</div>

@@ -45,7 +45,7 @@ session_start();
 			<a href="../index.php"><img src="../img/logo.jpg" alt="CloudsWorld"></a>
 		</div>
 		<div class="basket">
-			<a class="p-2 text-dark" href="../pages/basket.php">Корзина</a>
+			<a class="p-2 text-dark" onclick="showCart()" href="../pages/basket.php">Корзина</a>
 		</div>
 		<div class="number">
 			<h4>+7 (495) 485-15-51</h4>
