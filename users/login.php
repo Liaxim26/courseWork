@@ -3,9 +3,7 @@ session_start();
 require ('connection.php'); 
 ?>	
 <link rel="stylesheet" type="text/css" href="style.css">
-
-	<?php require "../blocks/header.php" ?>
-
+<?php require "../blocks/header.php" ?>
 <section>
 	<div class="registration">
 	<h2 align="center">Авторизация</h2>
@@ -25,8 +23,6 @@ require ('connection.php');
 		</form>
 	</div>
 </section>
-
-
 <?php 
 if (isset($_POST['username']) and isset($_POST['password'])){
 	$username = $_POST['username'];
@@ -42,19 +38,9 @@ if (isset($_POST['username']) and isset($_POST['password'])){
 		$fsmsg = "Ошибка";
 	}
 } 
-
 if (isset($_SESSION['username'])) {
 	$username = $_SESSION['username'];
-	?><div class="info-login alert alert-success" role="alert"> Привет <?php 	echo $username; ?>, Ты авторизировался!</div><?php
-	/*echo "<a href='logout.php' class='btn btn-primary'>Выход</a>";
-	?>
-	<script>
-	document.getElementById("login").innerHTML = "Выход"
-	document.getElementById("login").href = "logout.php";
-	</script>
-	<?php */
-	 } ?>
-
-
+	?><div class="info-login alert alert-success" role="alert"> Привет <?php 	echo $username; ?>, Ты авторизировался!</div><?php	
+} ?>
 
 <?php require "../blocks/footer.php" ?>

@@ -12,11 +12,7 @@ function addToCart(id) {
 		async: false,
 		type: "POST",
 		dataType: "text",
-		data: 'action=add&id=' + id,
-		success:function(result)
-		{
-			alert(result);
-		}
+		data: 'action=add&id=' + id
 })
 }
 

@@ -1,11 +1,7 @@
 <?php require "../blocks/header.php" ?>
 <link rel="stylesheet" type="text/css" href="style.css">
-
-
-
 <?php 
 require ('connection.php');
-
 if (isset($_POST['username']) && isset($_POST['password'])){
 	$username = $_POST['username'];
 	$email = $_POST['email'];
@@ -19,12 +15,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
 	} else {
 		$fsmsg = "Ошибка";
 	}
-
-}
-
-
- ?>	
-
+}?>	
 <section>
 	<div class="registration">
 	<h2 align="center">Регистация</h2>

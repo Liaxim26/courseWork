@@ -8,7 +8,7 @@ require ('../users/connection.php');?>
 		<h2 align="center">Корзина</h2>
 		<div class="reg_menu">
 			<a href="../index.php">Главная</a> -
-			<a href="podsystem.php">Корзина</a> 
+			<a href="basket.php">Корзина</a> 
 		</div>
 	</div>
 
