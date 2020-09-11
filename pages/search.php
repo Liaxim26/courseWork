@@ -21,6 +21,9 @@ require ('../users/connection.php');  ?>
 		    	if (isset($_POST['search'])) {
 		    		$search = $_POST['search'];
 		    		$query = mysqli_query($connection, "SELECT * FROM `product` WHERE `name` LIKE '%$search%'");
+		    		if (mysqli_num_rows($query) == 0) {
+		    			echo "<h3>Ничего не найдено</h3>";
+		    		}else {
 		    		while ($product = mysqli_fetch_assoc($query)){
 		    			echo'
 		<div class="card">
@@ -34,7 +37,7 @@ require ('../users/connection.php');  ?>
         	<button class="btn-cart btn btn-info btn-block" onclick="addToCart('.$product['id'].')" type="submit" data-id="'.$product['id'].'">Купить</button>
     	</div>
 		';
-		    		} 
+		    		}} 
 				}?>
 	</div>
 </div>

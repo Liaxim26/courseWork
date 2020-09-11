@@ -1,10 +1,4 @@
-//добавление товара 
-//авторизованный 
-/*if ($_SESSION['username'] != null){
-console.log('cool')
-} else {
-	console.log('bad')
-}*/
+
 
 function addToCart(id) {
 	$.ajax({
@@ -33,11 +27,7 @@ function countUp(id) {
 		async: false,
 		type: "POST",
 		dataType: "text",
-		data: 'action=up&id=' + id,
-		success:function(result)
-		{
-			alert(result);
-		}
+		data: 'action=up&id=' + id
 })
 	window.location.reload()
 }
